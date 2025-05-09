@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>秘密研究所入口</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- 引入 marked.js 用于 Markdown 转换 -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <!-- 首页内容 -->
+  <div class="hero">
+    <h1>秘密研究所</h1>
+    <p>点击进入研究所，探索未知的秘密。</p>
+    <button class="enter-btn" onclick="loadSecret()">进入研究所</button>
+    <div class="ripple"></div> <!-- 波纹效果 -->
+  </div>
+  
+  <!-- 显示秘密内容 -->
+  <div id="secret-content" style="display:none;">
+    <h2>秘密研究所：秘档 001</h2>
+    <div id="secret-text">
+      <!-- 这里通过 JS 加载 secret-001.md 文件的内容 -->
+    </div>
+    <a href="https://美丽.dizhi04.top/很好" class="btn" target="_blank">发现更多秘密</a>
+  </div>
+  
+  <script src="assets/secret.js"></script>
+</body>
+</html>
